@@ -65,6 +65,11 @@ public class SAPlayer {
         }
     }
     
+    /// The `AVAudioMixerNode` as created by the underlying audio engine
+    public var mainMixerNode: AVAudioMixerNode? {
+        engine?.mainMixerNode
+    }
+    
     /**
     Unique ID for the current engine. This will be nil if no audio has been initialized which means no engine exists.
     */
